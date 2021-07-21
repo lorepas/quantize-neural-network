@@ -1,0 +1,1 @@
+[32m[0715 16:20:36 @logger.py:92][0m Argv: /usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py -f /root/.local/share/jupyter/runtime/kernel-f5d54a78-5ec3-4703-b5a1-14c27692f44e.json

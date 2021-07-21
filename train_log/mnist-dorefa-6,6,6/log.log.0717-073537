@@ -1,0 +1,187 @@
+[32m[0717 07:26:46 @logger.py:92][0m Argv: /usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py -f /root/.local/share/jupyter/runtime/kernel-deb98920-21fb-4f50-b049-99bfb143a407.json
+[32m[0717 07:26:46 @fs.py:101][0m [5m[31mWRN[0m Env var $TENSORPACK_DATASET not set, using /root/tensorpack_data for datasets.
+[32m[0717 07:26:46 @fs.py:104][0m Created the directory /root/tensorpack_data.
+[32m[0717 07:26:46 @mnist.py:21][0m Downloading to /root/tensorpack_data/mnist_data/train-images-idx3-ubyte.gz...
+[32m[0717 07:31:32 @fs.py:73][0m Succesfully downloaded train-images-idx3-ubyte.gz. 9912422 bytes.
+[32m[0717 07:31:32 @mnist.py:21][0m Downloading to /root/tensorpack_data/mnist_data/train-labels-idx1-ubyte.gz...
+[32m[0717 07:31:32 @fs.py:73][0m Succesfully downloaded train-labels-idx1-ubyte.gz. 28881 bytes.
+[32m[0717 07:31:32 @mnist.py:21][0m Downloading to /root/tensorpack_data/mnist_data/t10k-images-idx3-ubyte.gz...
+[32m[0717 07:32:14 @fs.py:73][0m Succesfully downloaded t10k-images-idx3-ubyte.gz. 1648877 bytes.
+[32m[0717 07:32:14 @mnist.py:21][0m Downloading to /root/tensorpack_data/mnist_data/t10k-labels-idx1-ubyte.gz...
+[32m[0717 07:32:15 @fs.py:73][0m Succesfully downloaded t10k-labels-idx1-ubyte.gz. 4542 bytes.
+[32m[0717 07:32:15 @parallel.py:340][0m [MultiProcessRunnerZMQ] Will fork a dataflow more than one times. This assumes the datapoints are i.i.d.
+[32m[0717 07:32:15 @input_source.py:221][0m Setting up the queue 'QueueInput/input_queue' for CPU prefetching ...
+[32m[0717 07:32:15 @trainers.py:48][0m Building graph for a single training tower ...
+[32m[0717 07:32:15 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv0/W
+[32m[0717 07:32:15 @registry.py:90][0m 'conv0': [?, 40, 40, 3] --> [?, 36, 36, 48]
+[32m[0717 07:32:15 @registry.py:90][0m 'pool0': [?, 36, 36, 48] --> [?, 18, 18, 48]
+[32m[0717 07:32:15 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv1/W
+[32m[0717 07:32:15 @registry.py:90][0m 'conv1': [?, 18, 18, 48] --> [?, 18, 18, 64]
+[32m[0717 07:32:15 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv2/W
+[32m[0717 07:32:15 @registry.py:90][0m 'conv2': [?, 18, 18, 64] --> [?, 18, 18, 64]
+[32m[0717 07:32:15 @registry.py:90][0m 'pool1': [?, 18, 18, 64] --> [?, 9, 9, 64]
+[32m[0717 07:32:15 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv3/W
+[32m[0717 07:32:15 @registry.py:90][0m 'conv3': [?, 9, 9, 64] --> [?, 7, 7, 128]
+[32m[0717 07:32:15 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv4/W
+[32m[0717 07:32:15 @registry.py:90][0m 'conv4': [?, 7, 7, 128] --> [?, 7, 7, 128]
+[32m[0717 07:32:15 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv5/W
+[32m[0717 07:32:15 @registry.py:90][0m 'conv5': [?, 7, 7, 128] --> [?, 5, 5, 128]
+[32m[0717 07:32:15 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv6/W
+[32m[0717 07:32:15 @registry.py:90][0m 'conv6': [?, 5, 5, 128] --> [?, 1, 1, 512]
+[32m[0717 07:32:15 @<ipython-input-3-d72495402869>:113][0m Binarizing weight fc1/W
+[32m[0717 07:32:15 @registry.py:90][0m 'fc1': [?, 1, 1, 512] --> [?, 10]
+[32m[0717 07:32:15 @regularize.py:97][0m regularize_cost() found 1 variables to regularize.
+[32m[0717 07:32:15 @regularize.py:21][0m The following tensors will be regularized: fc1/W:0
+[32m[0717 07:32:16 @model_utils.py:67][0m [36mList of Trainable Variables: 
+[0mname       shape               #elements
+---------  ----------------  -----------
+conv0/W    [5, 5, 3, 48]            3600
+conv0/b    [48]                       48
+conv1/W    [3, 3, 48, 64]          27648
+bn1/gamma  [64]                       64
+bn1/beta   [64]                       64
+conv2/W    [3, 3, 64, 64]          36864
+bn2/gamma  [64]                       64
+bn2/beta   [64]                       64
+conv3/W    [3, 3, 64, 128]         73728
+bn3/gamma  [128]                     128
+bn3/beta   [128]                     128
+conv4/W    [3, 3, 128, 128]       147456
+bn4/gamma  [128]                     128
+bn4/beta   [128]                     128
+conv5/W    [3, 3, 128, 128]       147456
+bn5/gamma  [128]                     128
+bn5/beta   [128]                     128
+conv6/W    [5, 5, 128, 512]      1638400
+bn6/gamma  [512]                     512
+bn6/beta   [512]                     512
+fc1/W      [512, 10]                5120
+fc1/b      [10]                       10[36m
+Number of trainable variables: 22
+Number of parameters (elements): 2082378
+Storage space needed for all trainable variables: 7.94MB[0m
+[32m[0717 07:32:16 @base.py:207][0m Setup callbacks graph ...
+[32m[0717 07:32:16 @argtools.py:138][0m [5m[31mWRN[0m Starting a process with 'fork' method is efficient but not safe and may cause deadlock or crash.Use 'forkserver' or 'spawn' method instead if you run into such issues.See https://docs.python.org/3/library/multiprocessing.html#contexts-and-start-methods on how to set them.
+[32m[0717 07:32:16 @argtools.py:138][0m [5m[31mWRN[0m "import prctl" failed! Install python-prctl so that processes can be cleaned with guarantee.
+[32m[0717 07:32:16 @inference_runner.py:148][0m [InferenceRunner] Building tower 'InferenceTower' on device /gpu:0 ...
+[32m[0717 07:32:17 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv0/W
+[32m[0717 07:32:17 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv1/W
+[32m[0717 07:32:17 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv2/W
+[32m[0717 07:32:17 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv3/W
+[32m[0717 07:32:17 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv4/W
+[32m[0717 07:32:17 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv5/W
+[32m[0717 07:32:18 @<ipython-input-3-d72495402869>:113][0m Binarizing weight conv6/W
+[32m[0717 07:32:18 @<ipython-input-3-d72495402869>:113][0m Binarizing weight fc1/W
+[32m[0717 07:32:18 @summary.py:47][0m [MovingAverageSummary] 5 operations in collection 'MOVING_SUMMARY_OPS' will be run with session hooks.
+[32m[0717 07:32:18 @summary.py:94][0m Summarizing collection 'summaries' of size 22.
+[32m[0717 07:32:18 @graph.py:99][0m Applying collection UPDATE_OPS of 12 ops.
+[32m[0717 07:32:18 @base.py:228][0m Creating the session ...
+[32m[0717 07:32:26 @base.py:234][0m Initializing the session ...
+[32m[0717 07:32:26 @base.py:241][0m Graph Finalized.
+[32m[0717 07:32:26 @concurrency.py:37][0m Starting EnqueueThread: enqueue dataflow to TF queue "QueueInput/input_queue" ...
+[32m[0717 07:32:26 @input_source.py:171][0m [4m[5m[31mERR[0m [EnqueueThread] Exception in thread EnqueueThread: enqueue dataflow to TF queue "QueueInput/input_queue":
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/tensorpack/input_source/input_source.py", line 162, in run
+    self.op.run(feed_dict=feed)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/framework/ops.py", line 2625, in run
+    _run_using_default_session(self, feed_dict, self.graph, session)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/framework/ops.py", line 5578, in _run_using_default_session
+    session.run(operation, feed_dict)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/client/session.py", line 968, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/client/session.py", line 1167, in _run
+    (np_val.shape, subfeed_t.name, str(subfeed_t.get_shape())))
+ValueError: Cannot feed value of shape (128, 40, 40) for Tensor 'input:0', which has shape '(None, 40, 40, 3)'
+[32m[0717 07:32:26 @input_source.py:177][0m [EnqueueThread] Thread EnqueueThread: enqueue dataflow to TF queue "QueueInput/input_queue" Exited.
+[32m[0717 07:32:27 @inference_runner.py:95][0m [InferenceRunner] Will eval 79 iterations
+[32m[0717 07:32:27 @base.py:273][0m Start Epoch 1 ...
+[32m[0717 07:32:29 @base.py:289][0m Training was stopped by exception 2 root error(s) found.
+  (0) Out of range: FIFOQueue '_0_QueueInput/input_queue' is closed and has insufficient elements (requested 1, current size 0)
+	 [[node QueueInput/input_deque (defined at /usr/local/lib/python3.7/dist-packages/tensorpack/input_source/input_source.py:270) ]]
+  (1) Out of range: FIFOQueue '_0_QueueInput/input_queue' is closed and has insufficient elements (requested 1, current size 0)
+	 [[node QueueInput/input_deque (defined at /usr/local/lib/python3.7/dist-packages/tensorpack/input_source/input_source.py:270) ]]
+	 [[QueueInput/input_deque/_7]]
+0 successful operations.
+0 derived errors ignored.
+
+Errors may have originated from an input operation.
+Input Source operations connected to node QueueInput/input_deque:
+ QueueInput/input_queue (defined at /usr/local/lib/python3.7/dist-packages/tensorpack/input_source/input_source.py:220)
+
+Input Source operations connected to node QueueInput/input_deque:
+ QueueInput/input_queue (defined at /usr/local/lib/python3.7/dist-packages/tensorpack/input_source/input_source.py:220)
+
+Original stack trace for 'QueueInput/input_deque':
+  File "/usr/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py", line 16, in <module>
+    app.launch_new_instance()
+  File "/usr/local/lib/python3.7/dist-packages/traitlets/config/application.py", line 845, in launch_instance
+    app.start()
+  File "/usr/local/lib/python3.7/dist-packages/ipykernel/kernelapp.py", line 499, in start
+    self.io_loop.start()
+  File "/usr/local/lib/python3.7/dist-packages/tornado/platform/asyncio.py", line 132, in start
+    self.asyncio_loop.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 541, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1786, in _run_once
+    handle._run()
+  File "/usr/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/platform/asyncio.py", line 122, in _handle_events
+    handler_func(fileobj, events)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/stack_context.py", line 300, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/zmq/eventloop/zmqstream.py", line 451, in _handle_events
+    self._handle_recv()
+  File "/usr/local/lib/python3.7/dist-packages/zmq/eventloop/zmqstream.py", line 480, in _handle_recv
+    self._run_callback(callback, msg)
+  File "/usr/local/lib/python3.7/dist-packages/zmq/eventloop/zmqstream.py", line 434, in _run_callback
+    callback(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/tornado/stack_context.py", line 300, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/ipykernel/kernelbase.py", line 283, in dispatcher
+    return self.dispatch_shell(stream, msg)
+  File "/usr/local/lib/python3.7/dist-packages/ipykernel/kernelbase.py", line 233, in dispatch_shell
+    handler(stream, idents, msg)
+  File "/usr/local/lib/python3.7/dist-packages/ipykernel/kernelbase.py", line 399, in execute_request
+    user_expressions, allow_stdin)
+  File "/usr/local/lib/python3.7/dist-packages/ipykernel/ipkernel.py", line 208, in do_execute
+    res = shell.run_cell(code, store_history=store_history, silent=silent)
+  File "/usr/local/lib/python3.7/dist-packages/ipykernel/zmqshell.py", line 537, in run_cell
+    return super(ZMQInteractiveShell, self).run_cell(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/IPython/core/interactiveshell.py", line 2718, in run_cell
+    interactivity=interactivity, compiler=compiler, result=result)
+  File "/usr/local/lib/python3.7/dist-packages/IPython/core/interactiveshell.py", line 2822, in run_ast_nodes
+    if self.run_code(code, result):
+  File "/usr/local/lib/python3.7/dist-packages/IPython/core/interactiveshell.py", line 2882, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-3-d72495402869>", line 223, in <module>
+    launch_train_with_config(config, SimpleTrainer())
+  File "/usr/local/lib/python3.7/dist-packages/tensorpack/train/interface.py", line 89, in launch_train_with_config
+    model.build_graph, model.get_optimizer)
+  File "/usr/local/lib/python3.7/dist-packages/tensorpack/utils/argtools.py", line 168, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/tensorpack/train/tower.py", line 219, in setup_graph
+    train_callbacks = self._setup_graph(input, get_cost_fn, get_opt_fn)
+  File "/usr/local/lib/python3.7/dist-packages/tensorpack/train/trainers.py", line 50, in _setup_graph
+    grads = self._make_get_grad_fn(input, get_cost_fn, get_opt_fn)()
+  File "/usr/local/lib/python3.7/dist-packages/tensorpack/train/tower.py", line 247, in get_grad_fn
+    inputs = input.get_input_tensors()
+  File "/usr/local/lib/python3.7/dist-packages/tensorpack/input_source/input_source_base.py", line 122, in get_input_tensors
+    return self._get_input_tensors()
+  File "/usr/local/lib/python3.7/dist-packages/tensorpack/input_source/input_source.py", line 270, in _get_input_tensors
+    ret = self.queue.dequeue(name='input_deque')
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/data_flow_ops.py", line 445, in dequeue
+    self._queue_ref, self._dtypes, name=name)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/gen_data_flow_ops.py", line 3808, in queue_dequeue_v2
+    timeout_ms=timeout_ms, name=name)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/framework/op_def_library.py", line 750, in _apply_op_helper
+    attrs=attr_protos, op_def=op_def)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/framework/ops.py", line 3565, in _create_op_internal
+    op_def=op_def)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/framework/ops.py", line 2045, in __init__
+    self._traceback = tf_stack.extract_stack_for_node(self._c_op)
+.

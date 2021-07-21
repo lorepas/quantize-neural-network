@@ -1,0 +1,102 @@
+[32m[0715 13:46:25 @logger.py:92][0m Argv: /usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py -f /root/.local/share/jupyter/runtime/kernel-49d3f7f6-7d8c-4bc8-ae1e-7863be7d26fe.json
+[32m[0715 13:46:25 @parallel.py:340][0m [MultiProcessRunnerZMQ] Will fork a dataflow more than one times. This assumes the datapoints are i.i.d.
+[32m[0715 13:46:25 @input_source.py:221][0m Setting up the queue 'QueueInput/input_queue' for CPU prefetching ...
+[32m[0715 13:46:25 @trainers.py:48][0m Building graph for a single training tower ...
+[32m[0715 13:46:25 @<ipython-input-16-775cdd9decd9>:113][0m Binarizing weight conv1/W
+[32m[0715 13:46:25 @<ipython-input-16-775cdd9decd9>:113][0m Binarizing weight conv2/W
+[32m[0715 13:46:25 @<ipython-input-16-775cdd9decd9>:113][0m Binarizing weight conv3/W
+[32m[0715 13:46:25 @<ipython-input-16-775cdd9decd9>:113][0m Binarizing weight conv4/W
+[32m[0715 13:46:25 @<ipython-input-16-775cdd9decd9>:113][0m Binarizing weight conv5/W
+[32m[0715 13:46:25 @<ipython-input-16-775cdd9decd9>:113][0m Binarizing weight conv6/W
+[32m[0715 13:46:26 @regularize.py:97][0m regularize_cost() found 1 variables to regularize.
+[32m[0715 13:46:26 @regularize.py:21][0m The following tensors will be regularized: fc1/W:0
+[32m[0715 13:46:26 @model_utils.py:67][0m [36mList of Trainable Variables: 
+[0mname       shape               #elements
+---------  ----------------  -----------
+conv0/W    [5, 5, 3, 48]            3600
+conv0/b    [48]                       48
+conv1/W    [3, 3, 48, 64]          27648
+bn1/gamma  [64]                       64
+bn1/beta   [64]                       64
+conv2/W    [3, 3, 64, 64]          36864
+bn2/gamma  [64]                       64
+bn2/beta   [64]                       64
+conv3/W    [3, 3, 64, 128]         73728
+bn3/gamma  [128]                     128
+bn3/beta   [128]                     128
+conv4/W    [3, 3, 128, 128]       147456
+bn4/gamma  [128]                     128
+bn4/beta   [128]                     128
+conv5/W    [3, 3, 128, 128]       147456
+bn5/gamma  [128]                     128
+bn5/beta   [128]                     128
+conv6/W    [5, 5, 128, 512]      1638400
+bn6/gamma  [512]                     512
+bn6/beta   [512]                     512
+fc1/W      [512, 10]                5120
+fc1/b      [10]                       10[36m
+Number of trainable variables: 22
+Number of parameters (elements): 2082378
+Storage space needed for all trainable variables: 7.94MB[0m
+[32m[0715 13:46:26 @base.py:207][0m Setup callbacks graph ...
+[32m[0715 13:46:26 @argtools.py:138][0m [5m[31mWRN[0m "import prctl" failed! Install python-prctl so that processes can be cleaned with guarantee.
+[32m[0715 13:46:27 @inference_runner.py:148][0m [InferenceRunner] Building tower 'InferenceTower' on device /gpu:0 ...
+[32m[0715 13:46:27 @<ipython-input-16-775cdd9decd9>:113][0m Binarizing weight conv1/W
+[32m[0715 13:46:28 @<ipython-input-16-775cdd9decd9>:113][0m Binarizing weight conv2/W
+[32m[0715 13:46:28 @<ipython-input-16-775cdd9decd9>:113][0m Binarizing weight conv3/W
+[32m[0715 13:46:28 @<ipython-input-16-775cdd9decd9>:113][0m Binarizing weight conv4/W
+[32m[0715 13:46:28 @<ipython-input-16-775cdd9decd9>:113][0m Binarizing weight conv5/W
+[32m[0715 13:46:28 @<ipython-input-16-775cdd9decd9>:113][0m Binarizing weight conv6/W
+[32m[0715 13:46:29 @summary.py:47][0m [MovingAverageSummary] 5 operations in collection 'MOVING_SUMMARY_OPS' will be run with session hooks.
+[32m[0715 13:46:29 @summary.py:94][0m Summarizing collection 'summaries' of size 22.
+[32m[0715 13:46:29 @graph.py:99][0m Applying collection UPDATE_OPS of 12 ops.
+[32m[0715 13:46:29 @base.py:228][0m Creating the session ...
+[32m[0715 13:46:30 @base.py:234][0m Initializing the session ...
+[32m[0715 13:46:30 @base.py:241][0m Graph Finalized.
+[32m[0715 13:46:30 @concurrency.py:37][0m Starting EnqueueThread: enqueue dataflow to TF queue "QueueInput/input_queue" ...
+[32m[0715 13:46:31 @inference_runner.py:95][0m [InferenceRunner] Will eval 204 iterations
+[32m[0715 13:46:31 @monitor.py:361][0m [5m[31mWRN[0m History epoch=2 from JSON is not the predecessor of the current starting_epoch=1
+[32m[0715 13:46:31 @monitor.py:362][0m [5m[31mWRN[0m If you want to resume old training, either use `AutoResumeTrainConfig` or correctly set the new starting_epoch yourself to avoid inconsistency. 
+[32m[0715 13:46:31 @monitor.py:369][0m [5m[31mWRN[0m Now, we will train with starting_epoch=1 and backup old json to train_log/svhn-dorefa-1,2,4/stats.json.0715-134631
+[32m[0715 13:46:31 @base.py:273][0m Start Epoch 1 ...
+[32m[0715 13:51:43 @base.py:283][0m Epoch 1 (global_step 4721) finished, time:5 minutes 12 seconds.
+[32m[0715 13:51:44 @saver.py:82][0m Model saved to train_log/svhn-dorefa-1,2,4/model-4721.
+[32m[0715 13:51:58 @monitor.py:476][0m QueueInput/queue_size: 25.008
+[32m[0715 13:51:58 @monitor.py:476][0m accuracy: 0.94702
+[32m[0715 13:51:58 @monitor.py:476][0m cost: 0.17761
+[32m[0715 13:51:58 @monitor.py:476][0m cross_entropy_loss: 0.17761
+[32m[0715 13:51:58 @monitor.py:476][0m param-summary/conv0/W-rms: 0.1772
+[32m[0715 13:51:58 @monitor.py:476][0m param-summary/conv1/W-rms: 0.074461
+[32m[0715 13:51:58 @monitor.py:476][0m param-summary/conv2/W-rms: 0.07044
+[32m[0715 13:51:58 @monitor.py:476][0m param-summary/conv3/W-rms: 0.074504
+[32m[0715 13:51:58 @monitor.py:476][0m param-summary/conv4/W-rms: 0.062032
+[32m[0715 13:51:58 @monitor.py:476][0m param-summary/conv5/W-rms: 0.066582
+[32m[0715 13:51:58 @monitor.py:476][0m param-summary/conv6/W-rms: 0.052745
+[32m[0715 13:51:58 @monitor.py:476][0m param-summary/fc1/W-rms: 0.10427
+[32m[0715 13:51:58 @monitor.py:476][0m regularize_cost: 2.7755e-06
+[32m[0715 13:51:58 @monitor.py:476][0m train_error: 0.052984
+[32m[0715 13:51:58 @monitor.py:476][0m val_accuracy: 0.91859
+[32m[0715 13:51:58 @monitor.py:476][0m val_cross_entropy_loss: 0.27516
+[32m[0715 13:51:58 @group.py:44][0m Callbacks took 14.215 sec in total. InferenceRunner: 13.5 seconds
+[32m[0715 13:51:58 @base.py:273][0m Start Epoch 2 ...
+[32m[0715 13:56:45 @base.py:283][0m Epoch 2 (global_step 9442) finished, time:4 minutes 47 seconds.
+[32m[0715 13:56:45 @saver.py:82][0m Model saved to train_log/svhn-dorefa-1,2,4/model-9442.
+[32m[0715 13:56:57 @monitor.py:476][0m QueueInput/queue_size: 1.0413e-28
+[32m[0715 13:56:57 @monitor.py:476][0m accuracy: 0.96454
+[32m[0715 13:56:57 @monitor.py:476][0m cost: 0.12468
+[32m[0715 13:56:57 @monitor.py:476][0m cross_entropy_loss: 0.12467
+[32m[0715 13:56:57 @monitor.py:476][0m param-summary/conv0/W-rms: 0.19197
+[32m[0715 13:56:57 @monitor.py:476][0m param-summary/conv1/W-rms: 0.087909
+[32m[0715 13:56:57 @monitor.py:476][0m param-summary/conv2/W-rms: 0.092621
+[32m[0715 13:56:57 @monitor.py:476][0m param-summary/conv3/W-rms: 0.097218
+[32m[0715 13:56:57 @monitor.py:476][0m param-summary/conv4/W-rms: 0.086765
+[32m[0715 13:56:57 @monitor.py:476][0m param-summary/conv5/W-rms: 0.092715
+[32m[0715 13:56:57 @monitor.py:476][0m param-summary/conv6/W-rms: 0.079221
+[32m[0715 13:56:57 @monitor.py:476][0m param-summary/fc1/W-rms: 0.1316
+[32m[0715 13:56:57 @monitor.py:476][0m regularize_cost: 4.425e-06
+[32m[0715 13:56:57 @monitor.py:476][0m train_error: 0.035463
+[32m[0715 13:56:57 @monitor.py:476][0m val_accuracy: 0.94064
+[32m[0715 13:56:57 @monitor.py:476][0m val_cross_entropy_loss: 0.21368
+[32m[0715 13:56:57 @group.py:44][0m Callbacks took 12.408 sec in total. InferenceRunner: 12.1 seconds
+[32m[0715 13:56:57 @base.py:287][0m Training has finished!
+[32m[0715 13:56:57 @input_source.py:177][0m [EnqueueThread] Thread EnqueueThread: enqueue dataflow to TF queue "QueueInput/input_queue" Exited.

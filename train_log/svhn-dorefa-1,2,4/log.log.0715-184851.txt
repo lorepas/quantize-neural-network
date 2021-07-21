@@ -1,0 +1,2 @@
+[32m[0715 16:32:11 @logger.py:92][0m Argv: /usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py -f /root/.local/share/jupyter/runtime/kernel-f5d54a78-5ec3-4703-b5a1-14c27692f44e.json
+[32m[0715 16:32:11 @parallel.py:340][0m [MultiProcessRunnerZMQ] Will fork a dataflow more than one times. This assumes the datapoints are i.i.d.

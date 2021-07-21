@@ -1,0 +1,4 @@
+[32m[0717 07:23:25 @logger.py:92][0m Argv: /usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py -f /root/.local/share/jupyter/runtime/kernel-7267ad5f-3ce0-421d-a02b-f5633d272b7d.json
+[32m[0717 07:23:25 @fs.py:101][0m [5m[31mWRN[0m Env var $TENSORPACK_DATASET not set, using /root/tensorpack_data for datasets.
+[32m[0717 07:23:25 @fs.py:104][0m Created the directory /root/tensorpack_data.
+[32m[0717 07:23:25 @mnist.py:21][0m Downloading to /root/tensorpack_data/mnist_data/train-images-idx3-ubyte.gz...

@@ -1,0 +1,10 @@
+[32m[0715 15:45:22 @logger.py:92][0m Argv: /usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py -f /root/.local/share/jupyter/runtime/kernel-bbedc189-14a5-4667-862e-a9ab54eacf7c.json
+[32m[0715 15:45:22 @parallel.py:340][0m [MultiProcessRunnerZMQ] Will fork a dataflow more than one times. This assumes the datapoints are i.i.d.
+[32m[0715 15:45:22 @input_source.py:221][0m Setting up the queue 'QueueInput/input_queue' for CPU prefetching ...
+[32m[0715 15:45:22 @trainers.py:48][0m Building graph for a single training tower ...
+[32m[0715 15:45:22 @<ipython-input-16-1f0de27cd840>:113][0m Binarizing weight conv1/W
+[32m[0715 15:45:22 @<ipython-input-16-1f0de27cd840>:113][0m Binarizing weight conv2/W
+[32m[0715 15:45:22 @<ipython-input-16-1f0de27cd840>:113][0m Binarizing weight conv3/W
+[32m[0715 15:45:22 @<ipython-input-16-1f0de27cd840>:113][0m Binarizing weight conv4/W
+[32m[0715 15:45:22 @<ipython-input-16-1f0de27cd840>:113][0m Binarizing weight conv5/W
+[32m[0715 15:45:22 @<ipython-input-16-1f0de27cd840>:113][0m Binarizing weight conv6/W
