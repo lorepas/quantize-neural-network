@@ -1,0 +1,5 @@
+[32m[0721 21:19:11 @logger.py:92][0m Argv: /usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py -f /root/.local/share/jupyter/runtime/kernel-b5b3c3e8-7cd5-4670-bbd6-bf8d3ba9e586.json
+[32m[0721 21:19:11 @fs.py:101][0m [5m[31mWRN[0m Env var $TENSORPACK_DATASET not set, using /root/tensorpack_data for datasets.
+[32m[0721 21:19:11 @fs.py:104][0m Created the directory /root/tensorpack_data.
+[32m[0721 21:19:11 @mnist.py:21][0m Downloading to /root/tensorpack_data/mnist_data/train-images-idx3-ubyte.gz...
+[32m[0721 21:19:11 @fs.py:64][0m [4m[5m[31mERR[0m Failed to download http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz

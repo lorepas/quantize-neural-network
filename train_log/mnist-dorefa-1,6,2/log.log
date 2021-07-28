@@ -1,0 +1,253 @@
+[32m[0721 14:30:56 @logger.py:92][0m Argv: /usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py -f /root/.local/share/jupyter/runtime/kernel-d79aa494-03b5-4efe-9dd8-f98e81da4317.json
+[32m[0721 14:30:57 @parallel.py:340][0m [MultiProcessRunnerZMQ] Will fork a dataflow more than one times. This assumes the datapoints are i.i.d.
+[32m[0721 14:30:57 @input_source.py:221][0m Setting up the queue 'QueueInput/input_queue' for CPU prefetching ...
+[32m[0721 14:30:57 @trainers.py:48][0m Building graph for a single training tower ...
+[32m[0721 14:30:57 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv0/W
+[32m[0721 14:30:57 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv1/W
+[32m[0721 14:30:57 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv2/W
+[32m[0721 14:30:57 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv3/W
+[32m[0721 14:30:57 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv4/W
+[32m[0721 14:30:57 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv5/W
+[32m[0721 14:30:57 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv6/W
+[32m[0721 14:30:57 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight fc1/W
+[32m[0721 14:30:57 @regularize.py:97][0m regularize_cost() found 1 variables to regularize.
+[32m[0721 14:30:57 @regularize.py:21][0m The following tensors will be regularized: fc1/W:0
+[32m[0721 14:30:58 @model_utils.py:67][0m [36mList of Trainable Variables: 
+[0mname       shape               #elements
+---------  ----------------  -----------
+conv0/W    [5, 5, 1, 48]            1200
+conv0/b    [48]                       48
+conv1/W    [3, 3, 48, 64]          27648
+bn1/gamma  [64]                       64
+bn1/beta   [64]                       64
+conv2/W    [3, 3, 64, 64]          36864
+bn2/gamma  [64]                       64
+bn2/beta   [64]                       64
+conv3/W    [3, 3, 64, 128]         73728
+bn3/gamma  [128]                     128
+bn3/beta   [128]                     128
+conv4/W    [3, 3, 128, 128]       147456
+bn4/gamma  [128]                     128
+bn4/beta   [128]                     128
+conv5/W    [3, 3, 128, 128]       147456
+bn5/gamma  [128]                     128
+bn5/beta   [128]                     128
+conv6/W    [5, 5, 128, 512]      1638400
+bn6/gamma  [512]                     512
+bn6/beta   [512]                     512
+fc1/W      [512, 10]                5120
+fc1/b      [10]                       10[36m
+Number of trainable variables: 22
+Number of parameters (elements): 2079978
+Storage space needed for all trainable variables: 7.93MB[0m
+[32m[0721 14:30:58 @base.py:207][0m Setup callbacks graph ...
+[32m[0721 14:30:58 @argtools.py:138][0m [5m[31mWRN[0m "import prctl" failed! Install python-prctl so that processes can be cleaned with guarantee.
+[32m[0721 14:30:59 @inference_runner.py:148][0m [InferenceRunner] Building tower 'InferenceTower' on device /gpu:0 ...
+[32m[0721 14:30:59 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv0/W
+[32m[0721 14:30:59 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv1/W
+[32m[0721 14:31:00 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv2/W
+[32m[0721 14:31:00 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv3/W
+[32m[0721 14:31:00 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv4/W
+[32m[0721 14:31:00 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv5/W
+[32m[0721 14:31:01 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight conv6/W
+[32m[0721 14:31:01 @<ipython-input-14-1691e5a24a78>:114][0m Binarizing weight fc1/W
+[32m[0721 14:31:01 @summary.py:47][0m [MovingAverageSummary] 5 operations in collection 'MOVING_SUMMARY_OPS' will be run with session hooks.
+[32m[0721 14:31:01 @summary.py:94][0m Summarizing collection 'summaries' of size 22.
+[32m[0721 14:31:01 @graph.py:99][0m Applying collection UPDATE_OPS of 12 ops.
+[32m[0721 14:31:01 @base.py:228][0m Creating the session ...
+[32m[0721 14:31:02 @base.py:234][0m Initializing the session ...
+[32m[0721 14:31:02 @base.py:241][0m Graph Finalized.
+[32m[0721 14:31:02 @concurrency.py:37][0m Starting EnqueueThread: enqueue dataflow to TF queue "QueueInput/input_queue" ...
+[32m[0721 14:31:02 @inference_runner.py:95][0m [InferenceRunner] Will eval 79 iterations
+[32m[0721 14:31:02 @base.py:273][0m Start Epoch 1 ...
+[32m[0721 14:31:15 @base.py:283][0m Epoch 1 (global_step 468) finished, time:13.4 seconds.
+[32m[0721 14:31:16 @saver.py:82][0m Model saved to train_log/mnist-dorefa-1,6,2/model-468.
+[32m[0721 14:31:17 @monitor.py:476][0m QueueInput/queue_size: 50
+[32m[0721 14:31:17 @monitor.py:476][0m accuracy: 0.84364
+[32m[0721 14:31:17 @monitor.py:476][0m cost: 0.47714
+[32m[0721 14:31:17 @monitor.py:476][0m cross_entropy_loss: 0.47714
+[32m[0721 14:31:17 @monitor.py:476][0m param-summary/conv0/W-rms: 0.28803
+[32m[0721 14:31:17 @monitor.py:476][0m param-summary/conv1/W-rms: 0.068543
+[32m[0721 14:31:17 @monitor.py:476][0m param-summary/conv2/W-rms: 0.061555
+[32m[0721 14:31:17 @monitor.py:476][0m param-summary/conv3/W-rms: 0.06148
+[32m[0721 14:31:17 @monitor.py:476][0m param-summary/conv4/W-rms: 0.045341
+[32m[0721 14:31:17 @monitor.py:476][0m param-summary/conv5/W-rms: 0.046014
+[32m[0721 14:31:17 @monitor.py:476][0m param-summary/conv6/W-rms: 0.031839
+[32m[0721 14:31:17 @monitor.py:476][0m param-summary/fc1/W-rms: 0.084553
+[32m[0721 14:31:17 @monitor.py:476][0m regularize_cost: 1.8115e-06
+[32m[0721 14:31:17 @monitor.py:476][0m train_error: 0.15636
+[32m[0721 14:31:17 @monitor.py:476][0m val_accuracy: 0.27838
+[32m[0721 14:31:17 @monitor.py:476][0m val_cross_entropy_loss: 2.6395
+[32m[0721 14:31:17 @base.py:273][0m Start Epoch 2 ...
+[32m[0721 14:31:29 @base.py:283][0m Epoch 2 (global_step 936) finished, time:12.4 seconds.
+[32m[0721 14:31:29 @saver.py:82][0m Model saved to train_log/mnist-dorefa-1,6,2/model-936.
+[32m[0721 14:31:30 @monitor.py:476][0m QueueInput/queue_size: 50
+[32m[0721 14:31:30 @monitor.py:476][0m accuracy: 0.88841
+[32m[0721 14:31:30 @monitor.py:476][0m cost: 0.34708
+[32m[0721 14:31:30 @monitor.py:476][0m cross_entropy_loss: 0.34707
+[32m[0721 14:31:30 @monitor.py:476][0m param-summary/conv0/W-rms: 0.28815
+[32m[0721 14:31:30 @monitor.py:476][0m param-summary/conv1/W-rms: 0.068906
+[32m[0721 14:31:30 @monitor.py:476][0m param-summary/conv2/W-rms: 0.065844
+[32m[0721 14:31:30 @monitor.py:476][0m param-summary/conv3/W-rms: 0.064831
+[32m[0721 14:31:30 @monitor.py:476][0m param-summary/conv4/W-rms: 0.048622
+[32m[0721 14:31:30 @monitor.py:476][0m param-summary/conv5/W-rms: 0.05009
+[32m[0721 14:31:30 @monitor.py:476][0m param-summary/conv6/W-rms: 0.037005
+[32m[0721 14:31:30 @monitor.py:476][0m param-summary/fc1/W-rms: 0.090011
+[32m[0721 14:31:30 @monitor.py:476][0m regularize_cost: 2.0559e-06
+[32m[0721 14:31:30 @monitor.py:476][0m train_error: 0.11159
+[32m[0721 14:31:30 @monitor.py:476][0m val_accuracy: 0.91436
+[32m[0721 14:31:30 @monitor.py:476][0m val_cross_entropy_loss: 0.27165
+[32m[0721 14:31:30 @base.py:273][0m Start Epoch 3 ...
+[32m[0721 14:31:43 @base.py:283][0m Epoch 3 (global_step 1404) finished, time:12.6 seconds.
+[32m[0721 14:31:43 @saver.py:82][0m Model saved to train_log/mnist-dorefa-1,6,2/model-1404.
+[32m[0721 14:31:44 @monitor.py:476][0m QueueInput/queue_size: 50
+[32m[0721 14:31:44 @monitor.py:476][0m accuracy: 0.6779
+[32m[0721 14:31:44 @monitor.py:476][0m cost: 0.96501
+[32m[0721 14:31:44 @monitor.py:476][0m cross_entropy_loss: 0.96501
+[32m[0721 14:31:44 @monitor.py:476][0m param-summary/conv0/W-rms: 0.28808
+[32m[0721 14:31:44 @monitor.py:476][0m param-summary/conv1/W-rms: 0.06893
+[32m[0721 14:31:44 @monitor.py:476][0m param-summary/conv2/W-rms: 0.066873
+[32m[0721 14:31:44 @monitor.py:476][0m param-summary/conv3/W-rms: 0.066832
+[32m[0721 14:31:44 @monitor.py:476][0m param-summary/conv4/W-rms: 0.051275
+[32m[0721 14:31:44 @monitor.py:476][0m param-summary/conv5/W-rms: 0.054352
+[32m[0721 14:31:44 @monitor.py:476][0m param-summary/conv6/W-rms: 0.042081
+[32m[0721 14:31:44 @monitor.py:476][0m param-summary/fc1/W-rms: 0.092667
+[32m[0721 14:31:44 @monitor.py:476][0m regularize_cost: 2.191e-06
+[32m[0721 14:31:44 @monitor.py:476][0m train_error: 0.3221
+[32m[0721 14:31:44 @monitor.py:476][0m val_accuracy: 0.75475
+[32m[0721 14:31:44 @monitor.py:476][0m val_cross_entropy_loss: 0.78385
+[32m[0721 14:31:44 @base.py:273][0m Start Epoch 4 ...
+[32m[0721 14:31:57 @base.py:283][0m Epoch 4 (global_step 1872) finished, time:12.7 seconds.
+[32m[0721 14:31:57 @saver.py:82][0m Model saved to train_log/mnist-dorefa-1,6,2/model-1872.
+[32m[0721 14:31:58 @monitor.py:476][0m QueueInput/queue_size: 50
+[32m[0721 14:31:58 @monitor.py:476][0m accuracy: 0.9146
+[32m[0721 14:31:58 @monitor.py:476][0m cost: 0.27896
+[32m[0721 14:31:58 @monitor.py:476][0m cross_entropy_loss: 0.27896
+[32m[0721 14:31:58 @monitor.py:476][0m param-summary/conv0/W-rms: 0.28814
+[32m[0721 14:31:58 @monitor.py:476][0m param-summary/conv1/W-rms: 0.068941
+[32m[0721 14:31:58 @monitor.py:476][0m param-summary/conv2/W-rms: 0.067075
+[32m[0721 14:31:58 @monitor.py:476][0m param-summary/conv3/W-rms: 0.06723
+[32m[0721 14:31:58 @monitor.py:476][0m param-summary/conv4/W-rms: 0.05247
+[32m[0721 14:31:58 @monitor.py:476][0m param-summary/conv5/W-rms: 0.056352
+[32m[0721 14:31:58 @monitor.py:476][0m param-summary/conv6/W-rms: 0.044868
+[32m[0721 14:31:58 @monitor.py:476][0m param-summary/fc1/W-rms: 0.10089
+[32m[0721 14:31:58 @monitor.py:476][0m regularize_cost: 2.585e-06
+[32m[0721 14:31:58 @monitor.py:476][0m train_error: 0.085398
+[32m[0721 14:31:58 @monitor.py:476][0m val_accuracy: 0.92939
+[32m[0721 14:31:58 @monitor.py:476][0m val_cross_entropy_loss: 0.22421
+[32m[0721 14:31:58 @base.py:273][0m Start Epoch 5 ...
+[32m[0721 14:32:10 @base.py:283][0m Epoch 5 (global_step 2340) finished, time:12.7 seconds.
+[32m[0721 14:32:10 @saver.py:82][0m Model saved to train_log/mnist-dorefa-1,6,2/model-2340.
+[32m[0721 14:32:11 @monitor.py:476][0m QueueInput/queue_size: 50
+[32m[0721 14:32:11 @monitor.py:476][0m accuracy: 0.90016
+[32m[0721 14:32:11 @monitor.py:476][0m cost: 0.31668
+[32m[0721 14:32:11 @monitor.py:476][0m cross_entropy_loss: 0.31667
+[32m[0721 14:32:11 @monitor.py:476][0m param-summary/conv0/W-rms: 0.28812
+[32m[0721 14:32:11 @monitor.py:476][0m param-summary/conv1/W-rms: 0.068924
+[32m[0721 14:32:11 @monitor.py:476][0m param-summary/conv2/W-rms: 0.067612
+[32m[0721 14:32:11 @monitor.py:476][0m param-summary/conv3/W-rms: 0.068174
+[32m[0721 14:32:11 @monitor.py:476][0m param-summary/conv4/W-rms: 0.054265
+[32m[0721 14:32:11 @monitor.py:476][0m param-summary/conv5/W-rms: 0.058857
+[32m[0721 14:32:11 @monitor.py:476][0m param-summary/conv6/W-rms: 0.047722
+[32m[0721 14:32:11 @monitor.py:476][0m param-summary/fc1/W-rms: 0.10816
+[32m[0721 14:32:11 @monitor.py:476][0m regularize_cost: 2.9699e-06
+[32m[0721 14:32:11 @monitor.py:476][0m train_error: 0.099839
+[32m[0721 14:32:11 @monitor.py:476][0m val_accuracy: 0.9192
+[32m[0721 14:32:11 @monitor.py:476][0m val_cross_entropy_loss: 0.24434
+[32m[0721 14:32:11 @base.py:273][0m Start Epoch 6 ...
+[32m[0721 14:32:24 @base.py:283][0m Epoch 6 (global_step 2808) finished, time:12.3 seconds.
+[32m[0721 14:32:24 @saver.py:82][0m Model saved to train_log/mnist-dorefa-1,6,2/model-2808.
+[32m[0721 14:32:25 @monitor.py:476][0m QueueInput/queue_size: 50
+[32m[0721 14:32:25 @monitor.py:476][0m accuracy: 0.93212
+[32m[0721 14:32:25 @monitor.py:476][0m cost: 0.21366
+[32m[0721 14:32:25 @monitor.py:476][0m cross_entropy_loss: 0.21366
+[32m[0721 14:32:25 @monitor.py:476][0m param-summary/conv0/W-rms: 0.28817
+[32m[0721 14:32:25 @monitor.py:476][0m param-summary/conv1/W-rms: 0.06894
+[32m[0721 14:32:25 @monitor.py:476][0m param-summary/conv2/W-rms: 0.067822
+[32m[0721 14:32:25 @monitor.py:476][0m param-summary/conv3/W-rms: 0.068678
+[32m[0721 14:32:25 @monitor.py:476][0m param-summary/conv4/W-rms: 0.055514
+[32m[0721 14:32:25 @monitor.py:476][0m param-summary/conv5/W-rms: 0.060525
+[32m[0721 14:32:25 @monitor.py:476][0m param-summary/conv6/W-rms: 0.049692
+[32m[0721 14:32:25 @monitor.py:476][0m param-summary/fc1/W-rms: 0.11629
+[32m[0721 14:32:25 @monitor.py:476][0m regularize_cost: 3.4478e-06
+[32m[0721 14:32:25 @monitor.py:476][0m train_error: 0.067875
+[32m[0721 14:32:25 @monitor.py:476][0m val_accuracy: 0.93275
+[32m[0721 14:32:25 @monitor.py:476][0m val_cross_entropy_loss: 0.21132
+[32m[0721 14:32:25 @base.py:273][0m Start Epoch 7 ...
+[32m[0721 14:32:37 @base.py:283][0m Epoch 7 (global_step 3276) finished, time:12.4 seconds.
+[32m[0721 14:32:37 @saver.py:82][0m Model saved to train_log/mnist-dorefa-1,6,2/model-3276.
+[32m[0721 14:32:38 @monitor.py:476][0m QueueInput/queue_size: 50
+[32m[0721 14:32:38 @monitor.py:476][0m accuracy: 0.91056
+[32m[0721 14:32:38 @monitor.py:476][0m cost: 0.28812
+[32m[0721 14:32:38 @monitor.py:476][0m cross_entropy_loss: 0.28812
+[32m[0721 14:32:38 @monitor.py:476][0m param-summary/conv0/W-rms: 0.28826
+[32m[0721 14:32:38 @monitor.py:476][0m param-summary/conv1/W-rms: 0.068965
+[32m[0721 14:32:38 @monitor.py:476][0m param-summary/conv2/W-rms: 0.068514
+[32m[0721 14:32:38 @monitor.py:476][0m param-summary/conv3/W-rms: 0.069442
+[32m[0721 14:32:38 @monitor.py:476][0m param-summary/conv4/W-rms: 0.056531
+[32m[0721 14:32:38 @monitor.py:476][0m param-summary/conv5/W-rms: 0.062585
+[32m[0721 14:32:38 @monitor.py:476][0m param-summary/conv6/W-rms: 0.052046
+[32m[0721 14:32:38 @monitor.py:476][0m param-summary/fc1/W-rms: 0.124
+[32m[0721 14:32:38 @monitor.py:476][0m regularize_cost: 3.9187e-06
+[32m[0721 14:32:38 @monitor.py:476][0m train_error: 0.089444
+[32m[0721 14:32:38 @monitor.py:476][0m val_accuracy: 0.94215
+[32m[0721 14:32:38 @monitor.py:476][0m val_cross_entropy_loss: 0.18814
+[32m[0721 14:32:38 @base.py:273][0m Start Epoch 8 ...
+[32m[0721 14:32:51 @base.py:283][0m Epoch 8 (global_step 3744) finished, time:12.5 seconds.
+[32m[0721 14:32:51 @saver.py:82][0m Model saved to train_log/mnist-dorefa-1,6,2/model-3744.
+[32m[0721 14:32:52 @monitor.py:476][0m QueueInput/queue_size: 50
+[32m[0721 14:32:52 @monitor.py:476][0m accuracy: 0.80508
+[32m[0721 14:32:52 @monitor.py:476][0m cost: 0.82543
+[32m[0721 14:32:52 @monitor.py:476][0m cross_entropy_loss: 0.82542
+[32m[0721 14:32:52 @monitor.py:476][0m param-summary/conv0/W-rms: 0.28838
+[32m[0721 14:32:52 @monitor.py:476][0m param-summary/conv1/W-rms: 0.068977
+[32m[0721 14:32:52 @monitor.py:476][0m param-summary/conv2/W-rms: 0.069096
+[32m[0721 14:32:52 @monitor.py:476][0m param-summary/conv3/W-rms: 0.07092
+[32m[0721 14:32:52 @monitor.py:476][0m param-summary/conv4/W-rms: 0.0592
+[32m[0721 14:32:52 @monitor.py:476][0m param-summary/conv5/W-rms: 0.064896
+[32m[0721 14:32:52 @monitor.py:476][0m param-summary/conv6/W-rms: 0.055275
+[32m[0721 14:32:52 @monitor.py:476][0m param-summary/fc1/W-rms: 0.12978
+[32m[0721 14:32:52 @monitor.py:476][0m regularize_cost: 4.3119e-06
+[32m[0721 14:32:52 @monitor.py:476][0m train_error: 0.19492
+[32m[0721 14:32:52 @monitor.py:476][0m val_accuracy: 0.15309
+[32m[0721 14:32:52 @monitor.py:476][0m val_cross_entropy_loss: 3.2028
+[32m[0721 14:32:52 @base.py:273][0m Start Epoch 9 ...
+[32m[0721 14:33:05 @base.py:283][0m Epoch 9 (global_step 4212) finished, time:12.9 seconds.
+[32m[0721 14:33:05 @saver.py:82][0m Model saved to train_log/mnist-dorefa-1,6,2/model-4212.
+[32m[0721 14:33:06 @monitor.py:476][0m QueueInput/queue_size: 50
+[32m[0721 14:33:06 @monitor.py:476][0m accuracy: 0.93024
+[32m[0721 14:33:06 @monitor.py:476][0m cost: 0.22338
+[32m[0721 14:33:06 @monitor.py:476][0m cross_entropy_loss: 0.22338
+[32m[0721 14:33:06 @monitor.py:476][0m param-summary/conv0/W-rms: 0.28881
+[32m[0721 14:33:06 @monitor.py:476][0m param-summary/conv1/W-rms: 0.069511
+[32m[0721 14:33:06 @monitor.py:476][0m param-summary/conv2/W-rms: 0.076436
+[32m[0721 14:33:06 @monitor.py:476][0m param-summary/conv3/W-rms: 0.077765
+[32m[0721 14:33:06 @monitor.py:476][0m param-summary/conv4/W-rms: 0.066072
+[32m[0721 14:33:06 @monitor.py:476][0m param-summary/conv5/W-rms: 0.071702
+[32m[0721 14:33:06 @monitor.py:476][0m param-summary/conv6/W-rms: 0.060824
+[32m[0721 14:33:06 @monitor.py:476][0m param-summary/fc1/W-rms: 0.12666
+[32m[0721 14:33:06 @monitor.py:476][0m regularize_cost: 4.0833e-06
+[32m[0721 14:33:06 @monitor.py:476][0m train_error: 0.06976
+[32m[0721 14:33:06 @monitor.py:476][0m val_accuracy: 0.93592
+[32m[0721 14:33:06 @monitor.py:476][0m val_cross_entropy_loss: 0.19156
+[32m[0721 14:33:06 @base.py:273][0m Start Epoch 10 ...
+[32m[0721 14:33:18 @base.py:283][0m Epoch 10 (global_step 4680) finished, time:12.5 seconds.
+[32m[0721 14:33:18 @saver.py:82][0m Model saved to train_log/mnist-dorefa-1,6,2/model-4680.
+[32m[0721 14:33:19 @monitor.py:476][0m QueueInput/queue_size: 50
+[32m[0721 14:33:19 @monitor.py:476][0m accuracy: 0.61399
+[32m[0721 14:33:19 @monitor.py:476][0m cost: 1.13
+[32m[0721 14:33:19 @monitor.py:476][0m cross_entropy_loss: 1.13
+[32m[0721 14:33:19 @monitor.py:476][0m param-summary/conv0/W-rms: 0.28942
+[32m[0721 14:33:19 @monitor.py:476][0m param-summary/conv1/W-rms: 0.069703
+[32m[0721 14:33:19 @monitor.py:476][0m param-summary/conv2/W-rms: 0.07788
+[32m[0721 14:33:19 @monitor.py:476][0m param-summary/conv3/W-rms: 0.078963
+[32m[0721 14:33:19 @monitor.py:476][0m param-summary/conv4/W-rms: 0.06943
+[32m[0721 14:33:19 @monitor.py:476][0m param-summary/conv5/W-rms: 0.07434
+[32m[0721 14:33:19 @monitor.py:476][0m param-summary/conv6/W-rms: 0.065657
+[32m[0721 14:33:19 @monitor.py:476][0m param-summary/fc1/W-rms: 0.12396
+[32m[0721 14:33:19 @monitor.py:476][0m regularize_cost: 3.9415e-06
+[32m[0721 14:33:19 @monitor.py:476][0m train_error: 0.38601
+[32m[0721 14:33:19 @monitor.py:476][0m val_accuracy: 0.33663
+[32m[0721 14:33:19 @monitor.py:476][0m val_cross_entropy_loss: 2.0201
+[32m[0721 14:33:19 @base.py:287][0m Training has finished!
+[32m[0721 14:33:19 @input_source.py:177][0m [EnqueueThread] Thread EnqueueThread: enqueue dataflow to TF queue "QueueInput/input_queue" Exited.

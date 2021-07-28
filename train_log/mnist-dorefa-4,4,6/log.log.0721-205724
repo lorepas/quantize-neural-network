@@ -1,0 +1,3 @@
+[32m[0721 20:57:14 @logger.py:92][0m Argv: /usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py -f /root/.local/share/jupyter/runtime/kernel-27887b35-7ef0-4025-b4a2-c91b03757aae.json
+[32m[0721 20:57:14 @mnist.py:21][0m Downloading to /root/tensorpack_data/mnist_data/train-images-idx3-ubyte.gz...
+[32m[0721 20:57:14 @fs.py:64][0m [4m[5m[31mERR[0m Failed to download http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
