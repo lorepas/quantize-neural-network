@@ -13,6 +13,6 @@ The files .ipybn starting with **appr** are the ones related to the deep-in stud
 
 The files `appr_mnist_performance.ipynb` and `performance.ipynb` are the ones from which we get the images and the csv files respectively of the deep-in study and of the overall study.
 
-##Running
+## Running
 
 To run the script is needed to pre-install Tensorpack with `!pip install tensorpack` command. If you use Colab environment you need to mount Google Drive folder and to move in the folder where you want to execute the script. Pay attention, in case you change the name of the folder you must change all the path name in the files. 
