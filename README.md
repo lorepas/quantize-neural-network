@@ -7,8 +7,6 @@ The two .PNG images are the ones with the accuracy trend during the training amo
 
 The files .CSV in the form `appr_name_file.csv` are the ones with the accuracy performances obtained from the deep-in study about the MNIST case. The other two .CSV files are the ones obtained by the overall study.
 
-In the file `dorefa.ipynb` there are the utility function used in DoReFa. This file is useless because the functions needed are directly imported in each .ipynb files.
-
 The files .ipybn starting with **appr** are the ones related to the deep-in study about the MNIST case. The other ones are related to the overall study. The name of the file is explanatory as to which network and dataset were used. The ones without numbers in the name means that uses the configuration with **1,2,4**.
 
 The files `appr_mnist_performance.ipynb` and `performance.ipynb` are the ones from which we get the images and the csv files respectively of the deep-in study and of the overall study.
