@@ -1,4 +1,4 @@
-# Quantize Neural Network with low bitwidth for weights, activations and gradients
+# Quantized Neural Network with low bitwidth for weights, activations and gradients
 ![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)
 
 In `train_log` folder there are all the files with the performances derived from the training. Among all the files there are the ones with accuracy performances. The file with such informations are named `stats.json` or are in the form `stat_other_names.json`. If there are both, keep in consideration the ones in this form `stat_other_names.json`.
